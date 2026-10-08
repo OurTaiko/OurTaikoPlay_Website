@@ -1,5 +1,3 @@
-import { loadNightly } from "./releases.js";
-
 const menuButton = document.querySelector(".menu-toggle");
 const nav = document.querySelector("#site-nav");
 const setMenu = (open) => {
@@ -28,28 +26,3 @@ document.addEventListener("click", (event) => {
 matchMedia("(min-width: 801px)").addEventListener("change", () =>
   setMenu(false),
 );
-
-loadNightly()
-  .then((downloads) => {
-    const names = { windows: "Windows", android: "Android" };
-    for (const [platform, asset] of Object.entries(downloads)) {
-      const link = document.querySelector(`[data-download="${platform}"]`);
-      link.href = asset.url;
-      link.title = asset.name;
-      link.replaceChildren(
-        document.createTextNode(`下载 ${names[platform]} 版 `),
-      );
-      const icon = document.createElement("span");
-      icon.setAttribute("aria-hidden", "true");
-      icon.textContent = "↓";
-      link.append(icon);
-    }
-    if (Object.keys(downloads).length) {
-      document.querySelector("#release-status").textContent =
-        "已同步 GitHub Nightly 下载。开发版可能存在未修复的问题；若下载失败，可前往全部发布记录。";
-    }
-  })
-  .catch(() => {
-    document.querySelector("#release-status").textContent =
-      "暂时无法同步下载文件。Windows / Android 按钮仍可打开 Nightly 发布页，其他入口不受影响。";
-  });

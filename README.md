@@ -12,7 +12,6 @@ npm run dev
 ```
 
 ```sh
-npm test
 npm run build
 npm run preview
 ```
@@ -24,10 +23,9 @@ npm run preview
 - `index.html`：导航、首屏、功能、下载、上手指南、友链。
 - `credits.html`：素材来源和权利归属。
 - `src/style.css`：响应式样式。
-- `src/releases.js`：读取 OurTaiko/OurTaikoPlay 的 Nightly release，匹配已上传的 Windows x64 ZIP / Android ARM64 APK。
-- `src/main.js`：移动导航与下载链接更新。
+- `src/main.js`：移动导航。
 
-Release API 请求超时、限流或缺少平台文件时，保留可点击的 Nightly 发布页链接。iOS 使用既有 TestFlight 入口；macOS 当前引导至源码构建说明，不虚构安装包。
+Windows 与 Android 下载按钮始终指向 `https://github.com/OurTaiko/OurTaikoPlay/releases/tag/nightly`，由用户在发布页选择对应安装包。不请求 Release API，也不将链接替换为可能被滚动构建移除的安装包直链。iOS 使用既有 TestFlight 入口；macOS 当前引导至源码构建说明，不虚构安装包。
 
 页面功能描述依据 OurTaikoPlay README；并未承诺尚未实现的双人演奏、段位模式、完整菜单翻译或浏览器版游戏。
 
