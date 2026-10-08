@@ -1,0 +1,33 @@
+OurTaikoPlay Website — third-party asset notices
+
+Source repository: https://github.com/luluxia/donder-tool
+Source commit: 1e46215b8dc9b8ed77370f6ea5e22c5201bc57b1
+Retrieved: 2026-10-08
+
+Copied without modification into public/assets/donder/:
+  public/img/bg.webp -> bg.webp
+  public/img/icon.webp -> icon.webp
+  public/img/sticker/sticker_1.png -> sticker_1.png
+  public/img/sticker/sticker_2.png -> sticker_2.png
+  public/img/level/level_1.png -> level/level_1.png
+  public/img/level/level_2.png -> level/level_2.png
+  public/img/level/level_3.png -> level/level_3.png
+  public/img/level/level_4.png -> level/level_4.png
+  public/img/level/level_5.png -> level/level_5.png
+  public/font/ChillRoundF.woff2 -> ChillRoundF.woff2
+  README.md -> UPSTREAM-README.md
+
+The upstream README credits image assets to:
+https://www.spriters-resource.com/arcade/taikonotatsujin2020version/
+
+Upstream notice:
+本工具仅供学习交流使用，相关数据和图片版权归原作者及 Bandai Namco 所有。
+Donder Tool © 2025
+
+No general-purpose license file was present in the source snapshot.
+These assets and the font retain their respective owners' rights; this
+attribution is not a new license or a claim that they are public domain.
+
+Layout reference: https://openumiguri.pingfanh.top/
+Website implementation and OurTaikoPlay copy are independently authored.
+OurTaikoPlay is an unofficial project, not affiliated with Bandai Namco.
