@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f65040" />
-    <title>素材致谢 · OurTaikoPlay</title>
+    <title data-i18n="credits.pageTitle">素材致谢 · OurTaikoPlay</title>
     <link rel="icon" href="./favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/ourtaiko/icon-32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/ourtaiko/icon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
@@ -20,73 +29,203 @@
             height="40"
             alt=""
           /><span>OurTaiko<span class="red">Play</span></span></a
-        ><a href="./">返回首页</a>
+        ><a href="./"> <span data-i18n="credits.back">返回首页</span> </a>
+
+        <div class="language-switcher">
+          <button
+            type="button"
+            class="language-toggle"
+            aria-label="选择语言"
+            data-i18n-aria-label="language.label"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            title="选择语言"
+            data-i18n-title="language.label"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 5h12M9 3v2M6 5c.5 5 3.5 8 8 10M13 5c-.5 5-4 9-10 12M13 21l4-10 4 10M14.5 17h5"
+              />
+            </svg>
+          </button>
+          <ul
+            id="language-menu"
+            class="language-menu"
+            role="menu"
+            aria-label="选择语言"
+            data-i18n-aria-label="language.label"
+            hidden
+          >
+            <li role="none">
+              <button
+                type="button"
+                role="menuitemradio"
+                tabindex="-1"
+                aria-checked="true"
+                data-language="auto"
+                data-i18n="language.auto"
+              >
+                跟随浏览器
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitemradio"
+                tabindex="-1"
+                aria-checked="false"
+                data-language="zh-Hans"
+                lang="zh-Hans"
+              >
+                简体中文
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitemradio"
+                tabindex="-1"
+                aria-checked="false"
+                data-language="en"
+                lang="en"
+              >
+                English
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitemradio"
+                tabindex="-1"
+                aria-checked="false"
+                data-language="ja"
+                lang="ja"
+              >
+                日本語
+              </button>
+            </li>
+            <li role="none">
+              <button
+                type="button"
+                role="menuitemradio"
+                tabindex="-1"
+                aria-checked="false"
+                data-language="ko"
+                lang="ko"
+              >
+                한국어
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="section credits">
-      <p class="eyebrow">CREDITS</p>
-      <h1>素材来源与致谢</h1>
-      <p>感谢社区创作者与开源项目，让这个小小的太鼓世界更加丰富。</p>
-      <h2>OurTaiko 品牌图标</h2>
-      <p>网站 favicon、页眉与页脚使用 OurTaiko 图标，复用自 Fanmade 前端仓库现有的品牌资源。</p>
-      <h2>太鼓风格 UI 素材</h2>
+      <p class="eyebrow"><span data-i18n="credits.eyebrow">CREDITS</span></p>
+      <h1><span data-i18n="credits.title">素材来源与致谢</span></h1>
       <p>
-        本网站使用
+        <span data-i18n="credits.intro"
+          >感谢社区创作者与开源项目，让这个小小的太鼓世界更加丰富。</span
+        >
+      </p>
+      <h2><span data-i18n="credits.brand">OurTaiko 品牌图标</span></h2>
+      <p>
+        <span data-i18n="credits.brandText"
+          >网站 favicon、页眉与页脚使用 OurTaiko 图标，复用自 Fanmade
+          前端仓库现有的品牌资源。</span
+        >
+      </p>
+      <h2><span data-i18n="credits.assets">太鼓风格 UI 素材</span></h2>
+      <p>
+        <span data-i18n="credits.assetsBefore">本网站使用</span>
         <a
           href="https://github.com/luluxia/donder-tool"
           target="_blank"
           rel="noopener noreferrer"
           >luluxia / donder-tool</a
         >
-        仓库中的背景、太鼓图标、贴纸、难度图标与 ChillRoundF
-        字体。所使用的文件保留原始内容，未使用该项目的产品 Logo。
+        <span data-i18n="credits.assetsAfter"
+          >仓库中的背景、太鼓图标、贴纸、难度图标与 ChillRoundF
+          字体。所使用的文件保留原始内容，未使用该项目的产品 Logo。</span
+        >
       </p>
       <ul>
-        <li>来源版本：<code>1e46215b8dc9b8ed77370f6ea5e22c5201bc57b1</code></li>
         <li>
-          图片来源由上游注明为
+          <span data-i18n="credits.version">来源版本：</span>
+          <code>1e46215b8dc9b8ed77370f6ea5e22c5201bc57b1</code>
+        </li>
+        <li>
+          <span data-i18n="credits.imageBefore">图片来源由上游注明为</span>
           <a
             href="https://www.spriters-resource.com/arcade/taikonotatsujin2020version/"
             target="_blank"
             rel="noopener noreferrer"
             >The Spriters Resource</a
-          >。
+          >
+          <span data-i18n="punctuation.stop">。</span>
         </li>
-        <li>上游声明：相关数据和图片版权归原作者及 Bandai Namco 所有。</li>
         <li>
-          完整上游说明：<a href="./assets/donder/UPSTREAM-README.md"
-            >donder-tool README</a
-          >。
+          <span data-i18n="credits.upstreamNotice"
+            >上游声明：相关数据和图片版权归原作者及 Bandai Namco 所有。</span
+          >
+        </li>
+        <li>
+          <span data-i18n="credits.readme">完整上游说明：</span>
+          <a href="./assets/donder/UPSTREAM-README.md">donder-tool README</a>
+          <span data-i18n="punctuation.stop">。</span>
         </li>
       </ul>
       <p>
-        上游仓库未提供统一的开源许可文件；这里的来源说明不代表对素材重新授权。第三方字体与美术素材保留各自的权利归属，网站代码的使用不替代这些素材的许可。
+        <span data-i18n="credits.rights"
+          >上游仓库未提供统一的开源许可文件；这里的来源说明不代表对素材重新授权。第三方字体与美术素材保留各自的权利归属，网站代码的使用不替代这些素材的许可。</span
+        >
       </p>
-      <h2>布局参考</h2>
+      <h2><span data-i18n="credits.layout">布局参考</span></h2>
       <p>
-        页面的信息顺序与居中首屏参考
+        <span data-i18n="credits.layoutBefore"
+          >页面的信息顺序与居中首屏参考</span
+        >
         <a
           href="https://openumiguri.pingfanh.top/"
           target="_blank"
           rel="noopener noreferrer"
           >OpenUMIGURI</a
         >
-        的发布网站。本站的页面代码与 OurTaikoPlay 文案独立编写。
+        <span data-i18n="credits.layoutAfter"
+          >的发布网站。本站的页面代码与 OurTaikoPlay 文案独立编写。</span
+        >
       </p>
-      <h2>关于 OurTaikoPlay</h2>
+      <h2><span data-i18n="credits.about">关于 OurTaikoPlay</span></h2>
       <p>
-        OurTaikoPlay 是非官方开源太鼓节奏游戏，与 Bandai Namco
-        无关联。游戏源码及其第三方声明见
+        <span data-i18n="credits.aboutText"
+          >OurTaikoPlay 是非官方开源太鼓节奏游戏，与 Bandai Namco
+          无关联。游戏源码及其第三方声明见</span
+        >
         <a
           href="https://github.com/OurTaiko/OurTaikoPlay"
           target="_blank"
           rel="noopener noreferrer"
           >OurTaiko / OurTaikoPlay</a
-        >。
+        >
+        <span data-i18n="punctuation.stop">。</span>
       </p>
     </main>
     <footer class="site-footer">
-      <p>OurTaikoPlay · 让每一声咚，都有回响。</p>
+      <p>
+        <span data-i18n="credits.footer"
+          >OurTaikoPlay · 让每一声咚，都有回响。</span
+        >
+      </p>
     </footer>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
