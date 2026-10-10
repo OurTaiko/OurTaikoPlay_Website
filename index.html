@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f65040" />
     <meta
       name="description"
-      content="OurTaikoPlay：开源太鼓节奏游戏。Nijiiro 风格界面，键盘与触控操作，本地 TJA 与在线曲库。下载 Windows、Android 版本，或加入 iOS TestFlight。"
+      content="OurTaikoPlay：开源太鼓节奏游戏。Nijiiro 风格界面，键盘与触控操作，本地 TJA 与在线曲库。下载 Windows、macOS、Android 版本，或加入 iOS TestFlight。"
       data-i18n-content="page.description"
     />
     <title data-i18n="page.title">OurTaikoPlay · 一起，敲响每一拍</title>
@@ -256,7 +256,7 @@
             ><span
               >macOS
               <small>
-                <span data-i18n="download.source">源码构建</span>
+                NIGHTLY
               </small></span
             >
           </div>
@@ -417,7 +417,7 @@
           </div>
           <p class="download-intro">
             <span data-i18n="download.intro"
-              >项目持续开发中。Windows 与 Android 提供 Nightly 开发版，iOS 通过
+              >项目持续开发中。Windows、macOS 与 Android 提供 Nightly 开发版，iOS 通过
               TestFlight 参与测试。</span
             >
           </p>
@@ -527,23 +527,24 @@
                 >
                   <rect x="2" y="3" width="20" height="14" rx="2" />
                   <path d="M8 22h8M12 17v5M2 13h20" /></svg
-                ><span class="status-label muted">
-                  <span data-i18n="download.source">源码构建</span>
+                ><span class="status-label">
+                  NIGHTLY
                 </span>
               </div>
               <h3>macOS</h3>
               <p class="platform-spec">Intel + Apple Silicon</p>
               <a
                 class="download-button"
-                href="https://github.com/OurTaiko/OurTaikoPlay#构建"
+                data-download="macos"
+                href="https://github.com/OurTaiko/OurTaikoPlay/releases/tag/nightly"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span data-i18n="download.build">查看构建说明</span>
+                <span data-i18n="download.nightly">前往 Nightly 下载</span>
                 <span aria-hidden="true">↗</span></a
               >
               <p class="card-note">
-                <span data-i18n="download.macNote">暂未提供公开安装包</span>
+                <span data-i18n="download.macNote">解压后打开 OurTaikoPlay.app</span>
               </p>
             </article>
           </div>
@@ -551,7 +552,7 @@
             <span class="release-icon" aria-hidden="true">i</span>
             <p class="release-description">
               <span data-i18n="download.note"
-                >Windows 与 Android 按钮会打开 Nightly 发布页，请在 Assets
+                >Windows、macOS 与 Android 按钮会打开 Nightly 发布页，请在 Assets
                 中选择对应安装包。 Nightly
                 为开发版本，可能存在未修复的问题。</span
               >

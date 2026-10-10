@@ -25,7 +25,7 @@ npm run preview
 - `src/style.css`：响应式样式。
 - `src/main.js`：移动导航。
 
-Windows 与 Android 下载按钮始终指向 `https://github.com/OurTaiko/OurTaikoPlay/releases/tag/nightly`，由用户在发布页选择对应安装包。不请求 Release API，也不将链接替换为可能被滚动构建移除的安装包直链。iOS 使用既有 TestFlight 入口；macOS 当前引导至源码构建说明，不虚构安装包。
+Windows、macOS 与 Android 下载按钮始终指向 `https://github.com/OurTaiko/OurTaikoPlay/releases/tag/nightly`，由用户在发布页选择对应安装包。不请求 Release API，也不将链接替换为可能被滚动构建移除的安装包直链。macOS 提供 Intel + Apple Silicon Universal ZIP；iOS 使用既有 TestFlight 入口。
 
 页面功能描述依据 OurTaikoPlay README；并未承诺尚未实现的双人演奏、段位模式、完整菜单翻译或浏览器版游戏。
 
